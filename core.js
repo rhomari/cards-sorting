@@ -1,7 +1,5 @@
 
-function waitforit(time){
-    return new Promise(resolve => setTimeout(resolve, time));
-}
+
  function Sort(){
     const cards= document.querySelectorAll('.card');
     console.table(cards);
@@ -11,7 +9,6 @@ function waitforit(time){
     cards.forEach((e,i)=>{
            cardsinfos.push({content: e.innerText, x:e.offsetLeft, y:e.offsetTop, value : parseInt(e.getAttribute('value'))})
            
-        
     })
     
     cardsinfos.sort((x,y)=> (x.value<y.value ?-1:1))
