@@ -27,7 +27,7 @@ function waitforit(time){
         cards[i].classList.add('cardrotate');
         
         cards[i].innerText=e.content;
-        console.log(e.content, e.value);
+        
         cards[i].setAttribute('value', e.value);
         await waitforit(2000);
         
