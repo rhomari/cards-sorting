@@ -9,12 +9,12 @@ function waitforit(time){
     let cardsinfos =[]
     
     cards.forEach((e,i)=>{
-           cardsinfos.push({content: e.innerText, x:e.offsetLeft, y:e.offsetTop})
+           cardsinfos.push({content: e.innerText, x:e.offsetLeft, y:e.offsetTop, value : parseInt(e.getAttribute('value'))})
            
         
     })
     
-    cardsinfos.sort((x,y)=> (x.content<y.content ?-1:1))
+    cardsinfos.sort((x,y)=> (x.value<y.value ?-1:1))
     
     
     cardsinfos.forEach(async(e, i)=>{
