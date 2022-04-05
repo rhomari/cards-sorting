@@ -1,0 +1,53 @@
+:root{
+    --xpos : 0px;
+    --ypos : 0px;
+    --xposdest : 0px;
+    --yposdest : 0px;
+}
+body{
+    margin: 0;
+}
+.parent-flex{
+    display: flex;
+   
+    height: 400px;
+
+
+}
+.card{
+    height: 150px;
+    width: 100px;
+    margin: 10px;
+    background-color:orangered;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    perspective: 1200px;
+    
+   
+}
+.cardrotate{
+    position: relative;
+    animation: rotatecard 2s;
+   
+}
+@keyframes rotatecard {
+    0% {
+        transform: rotate(45deg) translate(var(--xposdest),var(--yposdest));
+        
+        
+        
+    }
+    50% {
+        transform:rotate(180deg) translate(var(--xpos),var(--ypos));
+        
+    }
+    100% {
+        transform: rotate(360deg) translate(0px,0px);
+    }
+}
+    
+
