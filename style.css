@@ -1,8 +1,7 @@
 :root{
     --xpos : 0px;
     --ypos : 0px;
-    --xposdest : 0px;
-    --yposdest : 0px;
+ 
 }
 body{
     margin: 0;
@@ -38,7 +37,7 @@ body{
 }
 @keyframes rotatecard {
     0% {
-        transform: rotate(45deg) translate(var(--xposdest),var(--yposdest));
+        transform: rotate(45deg) translate(0px,0px);
         
         
         
