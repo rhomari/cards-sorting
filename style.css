@@ -11,6 +11,7 @@ body{
     display: flex;
    
     height: 400px;
+    flex-wrap: wrap;
 
 
 }
@@ -26,6 +27,7 @@ body{
     align-items: center;
     color: #fff;
     perspective: 1200px;
+    
     
    
 }
